@@ -69,7 +69,7 @@ foreach($osztaly as $kulcs => $sor) {
             <?php
             $sql = "SELECT id, nev, sor, oszlop FROM osztaly";
             $result = $conn->query($sql);
-
+            
             $sor = NULL;
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
@@ -96,6 +96,4 @@ foreach($osztaly as $kulcs => $sor) {
 </body>
 
 </html>
-<?php
-$conn->close();
-?>
+<?php $conn->close(); ?>
