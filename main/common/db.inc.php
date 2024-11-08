@@ -1,10 +1,11 @@
 <?php
+session_start();
 
-// password?
 $servername = "localhost";
 $username = "peca";
 $password = "peca";
 $dbname = "php_teszt";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -13,4 +14,4 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
+?>
